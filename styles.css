@@ -142,3 +142,45 @@ h1 {
   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
   color: white;
 }
+
+/* === Typography Extras === 
+
+    1. CSS calc function can be used to make scaling text less choppy, making use of a resizable uni
+
+    Example:
+
+    h3 {
+        font-size: calc(0.75rem + 1.5vw);
+    }
+
+    2. CSS clamp function can be used to similarly to calc but it takes a minimum and maximum size for text
+
+    Example:
+
+    h3 {
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+    }
+
+    3. ch units should be used along with max-inline-size property to define the amount of characters on each line
+
+    Example:
+
+    p {
+        max-inline-size: 45ch;
+    }
+
+    4. line-height should be set with unitless declartion
+
+*/
+
+.scale {
+  font-size: calc(0.75rem + 1.5vw);
+}
+
+.clamp {
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+}
+
+.char {
+  max-inline-size: 45ch;
+}
