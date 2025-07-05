@@ -1,0 +1,59 @@
+/* The System Font Stack
+
+    1. If the font-family is set to something that is not installed on the user's computer, then a fallback font will be displayed.
+    2. If no fallback is defined, then the default HTML font is used which does not look good
+    3. It is common to see long stacks of fonts to ensure atleast one of them is downloaded
+
+    Example:
+
+    body {
+        font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+
+*/
+
+/* Web Fonts
+
+    1. To use a font that will not be available on the user's device, you need to import the font from an online source such as a font library or asset
+    2. Importing fonts allows them to be used with the font-fmaily css property
+    3. It is important to add a fallback font to ensure the site will not look broken if the url or external api changes or goes down at some point
+
+*/
+
+/* Online Font Libraries
+
+    1. One way to get fonts not instlaled on user devices is through an online font library
+    2. The library will provide a code snippet that must be placed either in the head of the HTML or the top of a CSS file
+
+    Example: 
+
+    === link tags to be put in the head tags of HTML ===
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    == import tag that is placed at the top of a CSS file ===
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*/
+
+/* Self Hosted Fonts
+
+    1. Fonts can be downloaded from the web, and then defined in the CSS file with the @font-face rule
+    2. There are a variety of font file formats but not all are supported by all browsers
+    3. This methods can be more reliable than relying on third-party fonts but a fallback should still be included
+
+    Example:
+
+    @font-face {
+        font-family: my-cool-font;
+        src: url(../fonts/the-font-file.woff);
+    }
+
+    h1 {
+        font-family: my-cool-font, sans-serif;
+    }
+
+*/
