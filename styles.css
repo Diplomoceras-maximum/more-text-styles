@@ -57,3 +57,81 @@
     }
 
 */
+
+/* === Text Styles === */
+
+/* font-style
+
+    1. em tag in HTML is used to emphasise the importance of something, however if you just want the text to be italic or bold, underlined, highighted, etc it should be done with a css property instead
+    2. em should be used specifically for semantic emphasis
+    3. font-style: italic is the option purely for stylistic purposes
+
+*/
+
+.italic {
+  font-style: italic;
+}
+
+/* letter-spacing
+
+    1. letter-spacing changes the space between letters
+    2. letter-spacing is useful for adjusting custom font or to make text like headings more aesthetically pleasing
+    3. It should be used sparingly to keep text readable
+
+    
+*/
+
+h1 {
+  font-size: 38px;
+}
+
+.wide {
+  font-size: 24px;
+  letter-spacing: 0.5em;
+}
+
+.narrow {
+  font-size: 48px;
+  letter-spacing: -0.15em;
+}
+
+/* line-height
+
+    1. line-height adjusts the space between each line in wrapped text
+    2. Adding line height can make long text more readable
+
+*/
+
+.container {
+  display: flex;
+}
+
+.line-height {
+  line-height: 1.5;
+}
+
+/* text-transform
+
+    1. text-transform changes the case of the text, for example all letters to uppercase, or to capitalise the first letter of every word
+
+*/
+
+.capitalise {
+  text-transform: uppercase;
+}
+
+.capitals {
+  text-transform: capitalize;
+}
+
+/* text-shadow
+
+    1. text-shadow adds a shadow around the text
+    2. Should be used sparingly
+
+*/
+
+.shadow {
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+}
