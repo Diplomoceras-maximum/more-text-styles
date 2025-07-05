@@ -19,6 +19,13 @@
     2. Importing fonts allows them to be used with the font-fmaily css property
     3. It is important to add a fallback font to ensure the site will not look broken if the url or external api changes or goes down at some point
 
+    Examples of web safe fonts:
+    1. Arial (sans-serif) / Helvetica
+    2. Courier New (monospace) / Courier
+    3. Georgia (serif)
+    4. Times New Roman (serif) / Times
+    5. Trebuchet MS (sans-serif) / Not widely available on mobile
+    6. Verdana (sans-serif)
 */
 
 /* Online Font Libraries
